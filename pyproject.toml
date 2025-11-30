@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsn-sync"
+version = "0.1.0"
+description = "A package for backend-frontend data synchronization without API endpoints"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Satish Choudhary", email = "satishchoudhary394@gmail.com"}
+]
+keywords = ["sync", "backend", "frontend", "data-sync", "api-free", "synchronization"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/python-hacked/dsn-sync"
+Repository = "https://github.com/python-hacked/dsn-sync.git"
+Issues = "https://github.com/python-hacked/dsn-sync/issues"
+
+[tool.setuptools]
+packages = ["dsn_sync"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt", "*.json"]
+
